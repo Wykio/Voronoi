@@ -3,3 +3,6 @@
 523	867	623681942	Voronoi.exe	7368a2f42f9da918
 0	348	623682022	CMakeFiles/Voronoi.dir/source/Voronoi.cpp.obj	9e5f7ce3db74068
 348	512	623682022	Voronoi.exe	9dab16c7f2a84742
+0	792	623683276	CMakeFiles/VoronoiLib.dir/source/Voronoi.cpp.obj	2c9602afe8e13c86
+793	1157	623683276	VoronoiLib.dll	929180a3435c0e38
+793	1157	623683276	VoronoiLib.lib	929180a3435c0e38

@@ -81,6 +81,44 @@ build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
 
 build edit_cache: phony CMakeFiles\edit_cache.util
 
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target VoronoiLib
+
+
+#############################################
+# Order-only phony target for VoronoiLib
+
+build cmake_object_order_depends_target_VoronoiLib_Debug: phony || CMakeFiles\VoronoiLib.dir
+
+build CMakeFiles\VoronoiLib.dir\source\Voronoi.cpp.obj: CXX_COMPILER__VoronoiLib_Debug ..\..\..\source\Voronoi.cpp || cmake_object_order_depends_target_VoronoiLib_Debug
+  DEFINES = -DVoronoiLib_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = CMakeFiles\VoronoiLib.dir
+  OBJECT_FILE_DIR = CMakeFiles\VoronoiLib.dir\source
+  TARGET_COMPILE_PDB = CMakeFiles\VoronoiLib.dir\
+  TARGET_PDB = VoronoiLib.pdb
+
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target VoronoiLib
+
+
+#############################################
+# Link the shared library VoronoiLib.dll
+
+build VoronoiLib.dll VoronoiLib.lib: CXX_SHARED_LIBRARY_LINKER__VoronoiLib_Debug CMakeFiles\VoronoiLib.dir\source\Voronoi.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\VoronoiLib.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_COMPILE_PDB = CMakeFiles\VoronoiLib.dir\
+  TARGET_FILE = VoronoiLib.dll
+  TARGET_IMPLIB = VoronoiLib.lib
+  TARGET_PDB = VoronoiLib.pdb
+
 
 #############################################
 # Utility command for rebuild_cache
@@ -98,6 +136,8 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
 build Voronoi: phony Voronoi.exe
 
+build VoronoiLib: phony VoronoiLib.dll
+
 # =============================================================================
 # Folder targets.
 
@@ -106,7 +146,7 @@ build Voronoi: phony Voronoi.exe
 #############################################
 # Folder: C:/Users/Antoine/source/repos/Voronoi/Voronoi/out/build/x64-Debug (par défaut)
 
-build all: phony Voronoi.exe
+build all: phony Voronoi.exe VoronoiLib.dll
 
 # =============================================================================
 # Built-in targets

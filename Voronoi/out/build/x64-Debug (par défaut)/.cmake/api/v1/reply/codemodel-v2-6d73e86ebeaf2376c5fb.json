@@ -14,7 +14,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -29,7 +30,8 @@
 					"name" : "Voronoi",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -40,6 +42,13 @@
 					"id" : "Voronoi::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-Voronoi-Debug-a7b21d2980ac05ea1702.json",
 					"name" : "Voronoi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "VoronoiLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-VoronoiLib-Debug-f8f28686ee25f0e0993a.json",
+					"name" : "VoronoiLib",
 					"projectIndex" : 0
 				}
 			]
